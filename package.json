@@ -1,11 +1,14 @@
 {
   "name": "irtisamsajin.github.io",
   "private": true,
+  "homepage": "https://github.com/irtisamsajin/irtisamsajin.github.io",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
     "build": "vite build",
+    "deploy": "vite build && gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview"
   },
