@@ -5,8 +5,8 @@ function Navbar({activePage}) {
     const [openMenu, setOpenMenu]=useState(false);
     return (
     <>
-    <div className={`sticky top-0 border-b-2 border-b-gray-200`}>
-        <div className="flex items-center justify-between px-4 md:px-20 lg:px-30 p-6 opacity-100 bg-white text-gray-950 ">
+    <div className={`sticky top-0 border-b-2 border-b-gray-100`}>
+        <div className="flex items-center justify-between px-5 md:px-20 lg:px-30 p-5 opacity-100 bg-white text-gray-950 ">
             <div>
                 <Link to="/" ><h3 className="text-2xl font-semibold">Irtisam Sajin</h3></Link>
             </div>
@@ -46,13 +46,14 @@ function Navbar({activePage}) {
         </div>
         <div className="sm:hidden">
             
-            <div className={`w-full grid gap-2 px-12 bg-white text-gray-500 text-lg border-b-2 border-b-gray-200 transition-all duration-500 ease-in-out overflow-hidden
+            <div className={`fixed w-full grid gap-2 px-12 bg-white text-gray-500 text-lg transition-all duration-500 ease-in-out overflow-hidden
               ${
                     openMenu
-                        ? 'max-h-80 opacity-100 pt-3 pb-4 '
+                        ? 'max-h-80 opacity-100 pt-2 pb-4 '
                         : 'max-h-0 opacity-0 py-0 pointer-events-none'
                 }`}
             >
+            {/* {openMenu && (<div className={`w-full grid gap-2 px-12 bg-white text-gray-500 text-lg transition-all duration-500`}> */}
                 <Link to="/" className={`hover:text-gray-950 transition duration-300 ${activePage=='/'?'text-gray-950 font-medium':''}` } >Home</Link>
                 <Link to="/profile" className={`hover:text-gray-950 transition duration-300 ${activePage=='/profile'?'text-gray-950 font-medium':''}`} >Profile</Link>
                 <Link to="/projects" className={`hover:text-gray-950 transition duration-300 ${activePage=='/projects'?'text-gray-950 font-medium':''}`} >Projects</Link>
