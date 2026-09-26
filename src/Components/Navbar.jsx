@@ -5,7 +5,7 @@ function Navbar({activePage}) {
     const [openMenu, setOpenMenu]=useState(false);
     return (
     <>
-    <div className={`sticky top-0 border-b-2 border-b-gray-100`}>
+    <div className={`border-b-2 border-b-gray-100`}>
         <div className="flex items-center justify-between px-5 md:px-20 lg:px-30 p-5 opacity-100 bg-white text-gray-950 ">
             <div>
                 <Link to="/" ><h3 className="text-2xl font-semibold">Irtisam Sajin</h3></Link>
@@ -46,7 +46,7 @@ function Navbar({activePage}) {
         </div>
         <div className="sm:hidden">
             
-            <div className={`fixed w-full grid gap-2 px-12 bg-white text-gray-500 text-lg transition-all duration-500 ease-in-out overflow-hidden
+            <div className={`w-full grid gap-2 px-12 bg-white text-gray-500 text-lg transition-all duration-500 ease-in-out overflow-hidden
               ${
                     openMenu
                         ? 'max-h-80 opacity-100 pt-2 pb-4 '
