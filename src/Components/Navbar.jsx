@@ -10,12 +10,12 @@ function Navbar({activePage}) {
             <div>
                 <Link to="/" ><h3 className="text-2xl font-semibold">Irtisam Sajin</h3></Link>
             </div>
-            <div className="hidden sm:flex justify-center gap-1 sm:gap-5 md:gap-6 lg:gap-10 text-lg text-gray-500">
-                <Link to="/" className={`hover:text-gray-950 transition duration-300 ${activePage=='/'?'text-gray-950 font-medium':''}`}>Home</Link>
-                <Link to="/profile" className={`hover:text-gray-950 transition duration-300 ${activePage=='/profile'?'text-gray-950 font-medium':''}`}>Profile</Link>
-                <Link to="/projects" className={`hover:text-gray-950 transition duration-300 ${activePage=='/projects'?'text-gray-950 font-medium':''}`}>Projects</Link>
-                <Link to="/blog" className={`hover:text-gray-950 transition duration-300 ${activePage=='/blog'?'text-gray-950 font-medium':''}`}>Blog</Link>
-                <Link to="/contact" className={`hover:text-gray-950 transition duration-300 ${activePage=='/contact'?'text-gray-950 font-medium':''}`}>Contact</Link>
+            <div className="hidden sm:flex justify-center gap-1 sm:gap-5 md:gap-6 lg:gap-10 text-lg text-gray-400">
+                <Link to="/" className={`hover:text-gray-950 transition duration-300 ${activePage=='/'?'text-gray-950 ':''}`}>Home</Link>
+                <Link to="/profile" className={`hover:text-gray-950 transition duration-300 ${activePage=='/profile'?'text-gray-950':''}`}>Profile</Link>
+                <Link to="/projects" className={`hover:text-gray-950 transition duration-300 ${activePage=='/projects'?'text-gray-950':''}`}>Projects</Link>
+                <Link to="/blog" className={`hover:text-gray-950 transition duration-300 ${activePage=='/blog'?'text-gray-950':''}`}>Blog</Link>
+                <Link to="/contact" className={`hover:text-gray-950 transition duration-300 ${activePage=='/contact'?'text-gray-950':''}`}>Contact</Link>
             </div>
 
             <div className="sm:hidden text-lg text-gray-500">
