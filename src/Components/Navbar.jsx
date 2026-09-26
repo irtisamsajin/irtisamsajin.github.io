@@ -6,7 +6,7 @@ function Navbar({activePage}) {
     return (
     <>
     <div className={`sticky top-0 border-b-2 border-b-gray-200`}>
-        <div className="flex items-center justify-between px-4 md:px-20 lg:px-30 p-6 opacity-100 bg-white text-gray-950 ">
+        <div className="flex items-center justify-between px-4 md:px-20 lg:px-30 p-4 sm:p-6 opacity-100 bg-white text-gray-950 ">
             <div>
                 <Link to="/" ><h3 className="text-2xl font-semibold">Irtisam Sajin</h3></Link>
             </div>
@@ -19,7 +19,7 @@ function Navbar({activePage}) {
             </div>
 
             <div className="sm:hidden flex items-center text-lg/6 text-gray-500">
-                <button className="text-gray-600 cursor-pointer border rounded-md px-2 text-center transition duration-300" onClick={() => setOpenMenu(!openMenu)} >
+                <button className="text-gray-600 cursor-pointer px-2 text-center transition duration-300" onClick={() => setOpenMenu(!openMenu)} >
                     <span className="relative block w-5 h-6">
                         <span
                             className={`absolute inset-0 transition-all duration-300 ${
