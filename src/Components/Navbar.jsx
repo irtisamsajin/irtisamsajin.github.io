@@ -46,7 +46,7 @@ function Navbar({activePage}) {
         </div>
         <div className="sm:hidden">
             
-            <div className={`fixed w-full grid gap-2 px-12 pt-3 pb-6 bg-white text-gray-500 text-lg border-b-2 border-b-gray-200 transition-all duration-500 ease-in-out overflow-hidden
+            <div className={`fixed w-full grid gap-2 px-12 bg-white text-gray-500 text-lg border-b-2 border-b-gray-200 transition-all duration-500 ease-in-out overflow-hidden
               ${
                     openMenu
                         ? 'max-h-80 opacity-100 pt-3 pb-4 '
