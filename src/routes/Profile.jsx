@@ -54,7 +54,7 @@ function Profile() {
                   <div className="flex relative w-7">
                       
                       <div
-                          className={`absolute inset-0 pt-0.25 pl-1 transition-all duration-300 ${
+                          className={`absolute inset-0 pt-0.25 pl-1 transition-all duration-500 ${
                               viewBscCourses
                                   ? 'opacity-0 rotate-90 scale-75'
                                   : 'opacity-100 rotate-0 scale-100'
@@ -64,7 +64,7 @@ function Profile() {
                       </div>
 
                       <div
-                          className={`absolute inset-0 pt-0.25 pl-1 transition-all duration-300 ${
+                          className={`absolute inset-0 pt-0.25 pl-1 transition-all duration-500 ${
                               viewBscCourses
                                   ? 'opacity-100 rotate-0 scale-100'
                                   : 'opacity-0 -rotate-90 scale-75'
