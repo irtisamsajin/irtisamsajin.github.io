@@ -48,29 +48,29 @@ function Profile() {
                   Jan 2022 - Jun 2026
               </p>
             </div>
-            <div className="mt-1 px-2">              
-              <button className="flex text-gray-500 text-sm sm:text-base md:text-md text-lg pr-5 cursor-pointer transition duration-300" onClick={() => setViewBscCourses(!viewBscCourses)} >
+            <div className="mt-2 px-2">              
+              <button className="flex text-gray-500 text-sm sm:text-base md:text-md text-lg cursor-pointer transition duration-300 border-1 rounded-sm px-2 pt-0.25 pb-0.75 " onClick={() => setViewBscCourses(!viewBscCourses)} >
                   <div className="text-md">Courses</div>
                   <div className="flex relative w-7">
                       
                       <div
-                          className={`absolute inset-0 transition-all duration-300 ${
+                          className={`absolute inset-0 pt-0.25 pl-1 transition-all duration-300 ${
                               viewBscCourses
                                   ? 'opacity-0 rotate-90 scale-75'
                                   : 'opacity-100 rotate-0 scale-100'
                           }`}
                       >
-                         ▼
+                         <div className="rotate-270 ">く</div>
                       </div>
 
                       <div
-                          className={`absolute inset-0  transition-all duration-300 ${
+                          className={`absolute inset-0 pt-0.25 pl-1 transition-all duration-300 ${
                               viewBscCourses
                                   ? 'opacity-100 rotate-0 scale-100'
                                   : 'opacity-0 -rotate-90 scale-75'
                           }`}
                       >
-                          ✕
+                          <div className="rotate-90 ">く</div>
                       </div>
                       
                   </div>
