@@ -19,13 +19,13 @@ function Profile() {
   return (
     <>
       <Navbar activePage='/profile' />
-      <div className="flex flex-col min-h-screen items-stretch gap-15 py-8 px-10 md:px-10 xl:px-50">
+      <div className="flex flex-col min-h-screen items-stretch gap-15 py-8 px-4.75 sm:px-10 xl:px-50">
 
         {/* Education */}
         <div>
-          <h1 className="text-3xl font-semibold ">
+          <h1 className="text-2xl sm:text-3xl font-semibold ">
             <div className="flex items-end">
-              <div className="text-5xl">E</div>
+              <div className="text-4xl sm:text-5xl">E</div>
               <div>ducation</div>
             </div>
           </h1>
@@ -128,9 +128,9 @@ function Profile() {
         
         {/* Skills */}
         <div>
-          <h1 className="text-3xl font-semibold ">
+          <h1 className="text-2xl sm:text-3xl font-semibold ">
             <div className="flex items-end">
-              <div className="text-5xl">S</div>
+              <div className="text-4xl sm:text-5xl">S</div>
               <div>kills</div>
             </div>
           </h1>
@@ -170,9 +170,9 @@ function Profile() {
 
         {/* Certification */}
         <div className="">
-          <h1 className="text-3xl font-semibold ">
+          <h1 className="text-2xl sm:text-3xl font-semibold ">
             <div className="flex items-end">
-              <div className="text-5xl">C</div>
+              <div className="text-4xl sm:text-5xl">C</div>
               <div>ertifications</div>
             </div>
           </h1>

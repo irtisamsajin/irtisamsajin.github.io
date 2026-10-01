@@ -6,7 +6,7 @@ function Navbar({activePage}) {
     return (
     <>
     <div className={`border-b-2 border-b-gray-100`}>
-        <div className="flex items-center justify-between px-10 md:px-10 xl:px-50 p-5 opacity-100 bg-white text-gray-950 ">
+        <div className="flex items-center justify-between px-4.75 sm:px-10 xl:px-50 p-5 opacity-100 bg-white text-gray-950 ">
             <div>
                 <Link to="/" ><h3 className="text-2xl font-semibold">Irtisam Sajin</h3></Link>
             </div>
