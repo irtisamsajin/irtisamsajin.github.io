@@ -8,7 +8,7 @@ function Navbar({activePage}) {
     <div className={`border-b-2 border-b-gray-100`}>
         <div className="flex items-center justify-between px-4.75 sm:px-10 xl:px-50 p-5 opacity-100 bg-white text-gray-950 ">
             <div>
-                <Link to="/" ><h3 className="text-2xl font-semibold">Irtisam Sajin</h3></Link>
+                <Link to="/" ><h3 className="text-3xl p-2 font-brittany">Irtisam Sajin</h3></Link>
             </div>
             <div className="hidden sm:flex justify-center gap-1 sm:gap-5 md:gap-6 lg:gap-10 text-lg text-gray-400">
                 <Link to="/" className={`hover:text-gray-950 transition duration-300 ${activePage=='/'?'text-gray-950 ':''}`}>Home</Link>
