@@ -5,7 +5,7 @@ function Profile() {
   return (
     <>
       <Navbar activePage='/profile' />
-      <div className="flex flex-col min-h-screen items-stretch gap-3 py-16 px-10 md:px-10 lg:px-50">
+      <div className="flex flex-col min-h-screen items-stretch gap-3 py-8 px-10 md:px-10 xl:px-50">
 
         {/* Education */}
         <div>
@@ -15,7 +15,7 @@ function Profile() {
           
           {/* BUET */}
           <div className="py-4 px-2 sm:px-5 font-sans">
-            <div className="flex justify-between mb-2 sm:mb-0">
+            <div className="flex justify-between gap-3 mb-2 sm:mb-0">
               <a href="https://www.buet.ac.bd/web/" className="text-md sm:text-lg lg:text-xl font-medium">
                 Bangladesh University of Engineering and Technology (BUET)
               </a>
@@ -44,7 +44,7 @@ function Profile() {
 
           {/*NDC */}
           <div className="py-4 px-2 sm:px-5 font-sans">
-            <div className="flex justify-between mb-2 sm:mb-0">
+            <div className="flex justify-between mb-2 gap-3 sm:mb-0">
               <a href="https://ndc.edu.bd/" className="text-md sm:text-lg lg:text-xl font-medium">
                 Notre Dame College, Dhaka
               </a>
@@ -63,7 +63,7 @@ function Profile() {
 
           {/*Rajuk */}
           <div className="py-4 px-2 sm:px-5 font-sans">
-            <div className="flex justify-between mb-2 sm:mb-0">
+            <div className="flex justify-between mb-2 gap-3 sm:mb-0">
               <a href="https://rajukcollege.edu.bd/" className="text-md sm:text-lg lg:text-xl font-medium">
                 Rajuk Uttara Model College
               </a>
