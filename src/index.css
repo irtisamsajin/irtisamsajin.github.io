@@ -4,13 +4,13 @@
 
 @font-face {
   font-family: 'Brittany';
-  src: url('/fonts/BrittanySignature.ttf');
+  src: url('/fonts/BrittanySignature.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 @theme {
-  --font-brittany: 'Brittany', cursive, sans-serif;
+  --font-brittany: 'Brittany', cursive;
 }
 
 html {
