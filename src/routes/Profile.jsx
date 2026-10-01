@@ -49,7 +49,7 @@ function Profile() {
               </p>
             </div>
             <div className="mt-2 px-2">              
-              <button className="flex text-gray-500 text-sm sm:text-base md:text-md text-lg cursor-pointer transition duration-300 border-1 rounded-sm px-2 pt-0.25 pb-0.75 " onClick={() => setViewBscCourses(!viewBscCourses)} >
+              <button className="flex text-gray-500 text-sm sm:text-base md:text-md text-lg cursor-pointer transition duration-300 border-1 rounded-sm px-2 pt-0.75 pb-1.25 " onClick={() => setViewBscCourses(!viewBscCourses)} >
                   <div className="text-md">Courses</div>
                   <div className="flex relative w-7">
                       
