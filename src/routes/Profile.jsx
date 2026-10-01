@@ -1,11 +1,17 @@
+import { useState } from "react"
 import Navbar from "../Components/Navbar"
+import Keywords from "../Components/Keywords";
 
 function Profile() {
-
+  const [viewBscCourses, setViewBscCourses]=useState(false);
+  const buetCourses=['Artificial Intelligence and Machine Learning','Microprocessors and Embedded Systems','Robotics and Automation',
+    'Digital Electronics','Digital Signal Processing','Random Signals and Processes','Continuous Signals and Linear Systems',
+    'Control Systems'
+  ];
   return (
     <>
       <Navbar activePage='/profile' />
-      <div className="flex flex-col min-h-screen items-stretch gap-3 py-8 px-10 md:px-10 xl:px-50">
+      <div className="flex flex-col min-h-screen items-stretch gap-3 py-8 px-10 md:px-10 xl:px-50 font-Inter">
 
         {/* Education */}
         <div>
@@ -14,7 +20,7 @@ function Profile() {
           </h1>
           
           {/* BUET */}
-          <div className="py-4 px-2 sm:px-5 font-sans">
+          <div className="py-4 px-2 sm:px-5">
             <div className="flex justify-between gap-3 mb-2 sm:mb-0">
               <a href="https://www.buet.ac.bd/web/" className="text-md sm:text-lg lg:text-xl font-medium">
                 Bangladesh University of Engineering and Technology (BUET)
@@ -24,26 +30,53 @@ function Profile() {
               </p>
             </div>
             <div className="flex flex-col gap-0.5">
-              <p className="text-sm sm:text-base md:text-md text-lg">Bachelor of Science (B.Sc) in Electrical and Electronic Engineering (EEE)</p>
+              <p className="hidden sm:block text-sm sm:text-base md:text-md text-lg">Bachelor of Science (B.Sc) in Electrical and Electronic Engineering (EEE)</p>
+              <p className="sm:hidden text-sm sm:text-base md:text-md text-lg">B.Sc in Electrical and Electronic Engineering (EEE)</p>
               <p className="text-sm sm:text-base md:text-md text-lg">CGPA: 3.65 / 4.00</p>
               <p className="md:hidden text-gray-500 text-sm sm:text-base">
                   Jan 2022 - Jun 2026
               </p>
-              <div className="flex flex-wrap py-4 text-sm md:text-md">
-                <div className="bg-slate-300 p-2 rounded-xl text-sky-950 m-1">Artificial Intelligence and Machine Learning</div>
-                <div className="bg-slate-300 p-2 rounded-xl text-sky-950 m-1">Microprocessors and Embedded Systems</div>
-                <div className="bg-slate-300 p-2 rounded-xl text-sky-950 m-1">Robotics and Automation</div>
-                <div className="bg-slate-300 p-2 rounded-xl text-sky-950 m-1">Digital Electronics</div>
-                <div className="bg-slate-300 p-2 rounded-xl text-sky-950 m-1">Digital Signal Processing</div>
-                <div className="bg-slate-300 p-2 rounded-xl text-sky-950 m-1">Random Signals and Processes</div>
-                <div className="bg-slate-300 p-2 rounded-xl text-sky-950 m-1">Continuous Signals and Linear Systems</div>
-                <div className="bg-slate-300 p-2 rounded-xl text-sky-950 m-1">Control Systems</div>
+            </div>
+            <div className="mt-2">              
+              <button className="flex text-gray-600 text-sm sm:text-base md:text-md text-lg pr-5 cursor-pointer transition duration-300" onClick={() => setViewBscCourses(!viewBscCourses)} >
+                  <div className="text-md">Courses</div>
+                  <div className="flex relative w-7">
+                      
+                      <div
+                          className={`absolute inset-0 transition-all duration-300 ${
+                              viewBscCourses
+                                  ? 'opacity-0 rotate-90 scale-75'
+                                  : 'opacity-100 rotate-0 scale-100'
+                          }`}
+                      >
+                         ▼
+                      </div>
+
+                      <div
+                          className={`absolute inset-0  transition-all duration-300 ${
+                              viewBscCourses
+                                  ? 'opacity-100 rotate-0 scale-100'
+                                  : 'opacity-0 -rotate-90 scale-75'
+                          }`}
+                      >
+                          ✕
+                      </div>
+                      
+                  </div>
+                  
+              </button>
+              <div className={`transition-all duration-500 ease-in-out overflow-hidden ${
+                    viewBscCourses
+                        ? 'max-h-80 opacity-100 pt-2 pb-4 '
+                        : 'max-h-0 opacity-0 py-0 pointer-events-none'
+                }`}>
+                <Keywords words={buetCourses} />
               </div>
             </div>
           </div>
 
           {/*NDC */}
-          <div className="py-4 px-2 sm:px-5 font-sans">
+          <div className="py-4 px-2 sm:px-5">
             <div className="flex justify-between mb-2 gap-3 sm:mb-0">
               <a href="https://ndc.edu.bd/" className="text-md sm:text-lg lg:text-xl font-medium">
                 Notre Dame College, Dhaka
@@ -62,7 +95,7 @@ function Profile() {
           </div>
 
           {/*Rajuk */}
-          <div className="py-4 px-2 sm:px-5 font-sans">
+          <div className="py-4 px-2 sm:px-5">
             <div className="flex justify-between mb-2 gap-3 sm:mb-0">
               <a href="https://rajukcollege.edu.bd/" className="text-md sm:text-lg lg:text-xl font-medium">
                 Rajuk Uttara Model College
