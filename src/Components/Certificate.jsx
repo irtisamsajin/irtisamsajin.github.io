@@ -7,12 +7,12 @@ function Certificate(props){
             <div className="flex justify-start items-center mb-2 gap-2 sm:mb-0">
             
               <p className="text-md sm:text-lg lg:text-xl font-medium">
-                {props.name} 
+                {Object.hasOwn(props,'link') &&  (<a href={props.link} className="text-gray-400 hover:text-gray-950 text-sm lg:text-md ">
+                🔗
+              </a>)} {props.name} 
               </p>
 
-               {Object.hasOwn(props,'link') &&  (<a href={props.link} className="text-gray-400 hover:text-gray-950 text-sm lg:text-md ">
-                🔗
-              </a>)}
+               
             </div>
             <div className="flex flex-col px-2 gap-0.5">
               <p className="text-sm sm:text-base md:text-md text-lg font-medium">{props.organization}</p>

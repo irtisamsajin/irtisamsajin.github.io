@@ -40,16 +40,16 @@ function Profile() {
                 Jan 2022 - Jun 2026
               </p>
             </div>
-            <div className="flex flex-col px-2 gap-0.5">
-              <p className="hidden sm:block text-sm sm:text-base md:text-md text-lg">Bachelor of Science (B.Sc) in Electrical and Electronic Engineering (EEE)</p>
-              <p className="sm:hidden text-sm sm:text-base md:text-md text-lg">B.Sc in Electrical and Electronic Engineering (EEE)</p>
-              <p className="text-sm sm:text-base md:text-md text-lg">CGPA: 3.65 / 4.00</p>
+            <div className="flex flex-col px-2 gap-1">
+              <p className="hidden sm:block text-sm sm:text-base md:text-md text-lg text-gray-500">Bachelor of Science (B.Sc) in Electrical and Electronic Engineering (EEE)</p>
+              <p className="sm:hidden text-sm sm:text-base md:text-md text-lg text-gray-500">B.Sc in Electrical and Electronic Engineering (EEE)</p>
+              <p className="text-sm sm:text-base md:text-md text-lg text-gray-500">CGPA: 3.65 / 4.00</p>
               <p className="md:hidden text-gray-500 text-sm sm:text-base">
                   Jan 2022 - Jun 2026
               </p>
             </div>
-            <div className="mt-2 px-2">              
-              <button className="flex text-gray-600 text-sm sm:text-base md:text-md text-lg pr-5 cursor-pointer transition duration-300" onClick={() => setViewBscCourses(!viewBscCourses)} >
+            <div className="mt-1 px-2">              
+              <button className="flex text-gray-500 text-sm sm:text-base md:text-md text-lg pr-5 cursor-pointer transition duration-300" onClick={() => setViewBscCourses(!viewBscCourses)} >
                   <div className="text-md">Courses</div>
                   <div className="flex relative w-7">
                       
@@ -78,7 +78,7 @@ function Profile() {
               </button>
               <div className={`transition-all duration-500 ease-in-out overflow-hidden ${
                     viewBscCourses
-                        ? 'max-h-80 opacity-100 pt-2 pb-4 '
+                        ? 'max-h-120 opacity-100 pt-2 pb-4 '
                         : 'max-h-0 opacity-0 py-0 pointer-events-none'
                 }`}>
                 <Keywords words={buetCourses} />
@@ -96,9 +96,9 @@ function Profile() {
                 Jul 2018 - Jan 2021
               </p>
             </div>
-            <div className="flex flex-col px-2 gap-0.5">
-              <p className="text-sm sm:text-base md:text-md text-lg">Higer Secondary Certificate (HSC) in Science</p>
-              <p className="text-sm sm:text-base md:text-md text-lg">GPA: 5.00 / 5.00</p>
+            <div className="flex flex-col px-2 gap-1">
+              <p className="text-sm sm:text-base md:text-md text-lg text-gray-500">Higer Secondary Certificate (HSC) in Science</p>
+              <p className="text-sm sm:text-base md:text-md text-lg text-gray-500">GPA: 5.00 / 5.00</p>
               <p className="md:hidden text-gray-500 text-sm sm:text-base">
                   Jul 2018 - Jan 2021
               </p>
@@ -115,9 +115,9 @@ function Profile() {
                 Jan 2016 - Jun 2018
               </p>
             </div>
-            <div className="flex flex-col px-2 gap-0.5">
-              <p className="text-sm sm:text-base md:text-md text-lg">Secondary School Certificate (SSC) in Science</p>
-              <p className="text-sm sm:text-base md:text-md text-lg">GPA: 5.00 / 5.00</p>
+            <div className="flex flex-col px-2 gap-1">
+              <p className="text-sm sm:text-base md:text-md text-lg text-gray-500">Secondary School Certificate (SSC) in Science</p>
+              <p className="text-sm sm:text-base md:text-md text-lg text-gray-500">GPA: 5.00 / 5.00</p>
               <p className="md:hidden text-gray-500 text-sm sm:text-base">
                   Jan 2016 - Jun 2018
               </p>
