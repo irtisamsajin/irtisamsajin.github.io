@@ -1,22 +1,33 @@
 import { useState } from "react"
 import Navbar from "../Components/Navbar"
 import Keywords from "../Components/Keywords";
+import Certificate from "../Components/Certificate";
 
 function Profile() {
   const [viewBscCourses, setViewBscCourses]=useState(false);
-  const buetCourses=['Artificial Intelligence and Machine Learning','Microprocessors and Embedded Systems','Robotics and Automation',
-    'Digital Electronics','Digital Signal Processing','Random Signals and Processes','Continuous Signals and Linear Systems',
+  const buetCourses=['Artificial Intelligence & Machine Learning','Robotics & Automation','Microprocessors & Embedded Systems',
+    'Digital Electronics','Digital Signal Processing','Random Signals & Processes','Continuous Signals & Linear Systems',
     'Control Systems'
   ];
+  
+  const programmingLanguages=['C/C++','Python','JavaScript','MATLAB', 'Assembly','Verilog'];
+  const frameworks=['TensorFlow', 'Keras', 'PyTorch', 'Scikit-learn', 'React', 'NodeJS', 'Django'];
+  const dataAnalysis=['Pandas', 'NumPy', 'SQL', 'MongoDB'];
+  const tools=['PSpice', 'Arduino', 'Kaggle', 'AutoCAD', 'Quartus', 'Simulink', 'Git & Github']
+  const hardware=[ 'Microcontrollers', 'FPGA', 'Embedded Systems', 'Sensor Interfacing'];
+
   return (
     <>
       <Navbar activePage='/profile' />
-      <div className="flex flex-col min-h-screen items-stretch gap-3 py-8 px-10 md:px-10 xl:px-50 font-Inter">
+      <div className="flex flex-col min-h-screen items-stretch gap-15 py-8 px-10 md:px-10 xl:px-50">
 
         {/* Education */}
         <div>
-          <h1 className="text-2xl font-semibold ">
-            Education
+          <h1 className="text-3xl font-semibold ">
+            <div className="flex items-end">
+              <div className="text-5xl">E</div>
+              <div>ducation</div>
+            </div>
           </h1>
           
           {/* BUET */}
@@ -29,7 +40,7 @@ function Profile() {
                 Jan 2022 - Jun 2026
               </p>
             </div>
-            <div className="flex flex-col gap-0.5">
+            <div className="flex flex-col px-2 gap-0.5">
               <p className="hidden sm:block text-sm sm:text-base md:text-md text-lg">Bachelor of Science (B.Sc) in Electrical and Electronic Engineering (EEE)</p>
               <p className="sm:hidden text-sm sm:text-base md:text-md text-lg">B.Sc in Electrical and Electronic Engineering (EEE)</p>
               <p className="text-sm sm:text-base md:text-md text-lg">CGPA: 3.65 / 4.00</p>
@@ -37,7 +48,7 @@ function Profile() {
                   Jan 2022 - Jun 2026
               </p>
             </div>
-            <div className="mt-2">              
+            <div className="mt-2 px-2">              
               <button className="flex text-gray-600 text-sm sm:text-base md:text-md text-lg pr-5 cursor-pointer transition duration-300" onClick={() => setViewBscCourses(!viewBscCourses)} >
                   <div className="text-md">Courses</div>
                   <div className="flex relative w-7">
@@ -85,7 +96,7 @@ function Profile() {
                 Jul 2018 - Jan 2021
               </p>
             </div>
-            <div className="flex flex-col gap-0.5">
+            <div className="flex flex-col px-2 gap-0.5">
               <p className="text-sm sm:text-base md:text-md text-lg">Higer Secondary Certificate (HSC) in Science</p>
               <p className="text-sm sm:text-base md:text-md text-lg">GPA: 5.00 / 5.00</p>
               <p className="md:hidden text-gray-500 text-sm sm:text-base">
@@ -104,7 +115,7 @@ function Profile() {
                 Jan 2016 - Jun 2018
               </p>
             </div>
-            <div className="flex flex-col gap-0.5">
+            <div className="flex flex-col px-2 gap-0.5">
               <p className="text-sm sm:text-base md:text-md text-lg">Secondary School Certificate (SSC) in Science</p>
               <p className="text-sm sm:text-base md:text-md text-lg">GPA: 5.00 / 5.00</p>
               <p className="md:hidden text-gray-500 text-sm sm:text-base">
@@ -115,7 +126,80 @@ function Profile() {
 
         </div>
         
-       
+        {/* Skills */}
+        <div>
+          <h1 className="text-3xl font-semibold ">
+            <div className="flex items-end">
+              <div className="text-5xl">S</div>
+              <div>kills</div>
+            </div>
+          </h1>
+          <div className="flex flex-col gap-1 mt-4">     
+            <div className="px-2 pt-2 sm:px-5">
+                <p className="text-md sm:text-lg lg:text-xl font-medium">
+                    Programming Languages
+                </p>           
+                <Keywords words={programmingLanguages} />
+            </div>
+            <div className="px-2 pt-2 sm:px-5">
+                <p className="text-md sm:text-lg lg:text-xl font-medium">
+                    Frameworks & Libraries
+                </p>           
+                <Keywords words={frameworks} />
+            </div>
+            <div className="px-2 pt-2 sm:px-5">
+                <p className="text-md sm:text-lg lg:text-xl font-medium">
+                    Data Analysis
+                </p>           
+                <Keywords words={dataAnalysis} />
+            </div>
+            <div className="px-2 pt-2 sm:px-5">
+                <p className="text-md sm:text-lg lg:text-xl font-medium">
+                    Tools
+                </p>           
+                <Keywords words={tools} />
+            </div>
+            <div className="px-2 pt-2 sm:px-5">
+                <p className="text-md sm:text-lg lg:text-xl font-medium">
+                    Hardware
+                </p>           
+                <Keywords words={hardware} />
+            </div>
+          </div>
+        </div>
+
+        {/* Certification */}
+        <div className="">
+          <h1 className="text-3xl font-semibold ">
+            <div className="flex items-end">
+              <div className="text-5xl">C</div>
+              <div>ertifications</div>
+            </div>
+          </h1>
+          <div className="flex flex-col p">
+            <Certificate 
+              name='Machine Learning Specialization'
+              organization='DeepLearning.AI'
+              link='https://www.coursera.org/account/accomplishments/specialization/SCSQWX4W386B'
+              issueDate='Nov 2023'
+              skills={['Machine Learning','Deep Learning','Numpy','TensorFlow']}
+            />
+            <Certificate 
+              name='CS50: Introduction to Programming with Python'
+              organization='Harvard University'
+              link='https://certificates.cs50.io/55ecec5c-b5ee-4b02-9b32-ae3f850f4577.pdf?size=letter'
+              issueDate='May 2023'
+            />
+            <Certificate 
+              name='Pandas Certification'
+              organization='Kaggle'
+              link='https://www.kaggle.com/learn/certification/mohammedirtisamsajin/pandas'
+              issueDate='Jun 2024'
+            />
+          </div>
+                
+        </div>
+
       </div>
     </>
   )
