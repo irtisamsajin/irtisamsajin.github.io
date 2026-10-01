@@ -5,7 +5,7 @@ function Navbar({activePage}) {
     const [openMenu, setOpenMenu]=useState(false);
     return (
     <>
-    <div className={`border-b-2 border-b-gray-100 pt-3`}>
+    <div className={`border-b-2 border-b-gray-100 pt-1`}>
         <div className="flex items-center justify-between px-4.75 sm:px-10 xl:px-50 p-5 opacity-100 bg-white text-gray-950 ">
             <div>
                 <Link to="/" ><h3 className="text-3xl p-2 font-brittany">Irtisam Sajin</h3></Link>
