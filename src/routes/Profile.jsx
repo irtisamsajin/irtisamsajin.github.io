@@ -2,6 +2,7 @@ import { useState } from "react"
 import Navbar from "../Components/Navbar"
 import Keywords from "../Components/Keywords";
 import Certificate from "../Components/Certificate";
+import Footer from "../Components/Footer";
 
 function Profile() {
   const [viewBscCourses, setViewBscCourses]=useState(false);
@@ -201,6 +202,7 @@ function Profile() {
         </div>
 
       </div>
+      <Footer />
     </>
   )
 }

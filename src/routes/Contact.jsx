@@ -1,3 +1,4 @@
+import Footer from "../Components/Footer"
 import Navbar from "../Components/Navbar"
 
 function Contact() {
@@ -6,6 +7,7 @@ function Contact() {
     <>
       <Navbar activePage='/contact' />
       Reached Contact
+      <Footer />
     </>
   )
 }

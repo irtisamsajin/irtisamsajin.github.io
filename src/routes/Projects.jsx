@@ -1,3 +1,4 @@
+import Footer from "../Components/Footer"
 import Navbar from "../Components/Navbar"
 
 function Projects() {
@@ -6,6 +7,7 @@ function Projects() {
     <>
       <Navbar activePage='/projects' />
       Reached Projects
+      <Footer />
     </>
   )
 }

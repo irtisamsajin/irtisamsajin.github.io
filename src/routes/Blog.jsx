@@ -1,3 +1,4 @@
+import Footer from "../Components/Footer"
 import Navbar from "../Components/Navbar"
 
 function Blog() {
@@ -6,6 +7,7 @@ function Blog() {
     <>
       <Navbar activePage='/blog' />
       Reached Blog
+      <Footer />
     </>
   )
 }
