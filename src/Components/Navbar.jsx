@@ -14,7 +14,7 @@ function Navbar({activePage}) {
                 <Link to="/" className={`hover:text-gray-950 transition duration-300 ${activePage=='/'?'text-gray-950 ':''}`}>Home</Link>
                 <Link to="/profile" className={`hover:text-gray-950 transition duration-300 ${activePage=='/profile'?'text-gray-950':''}`}>Profile</Link>
                 <Link to="/projects" className={`hover:text-gray-950 transition duration-300 ${activePage=='/projects'?'text-gray-950':''}`}>Projects</Link>
-                <Link to="/blog" className={`hover:text-gray-950 transition duration-300 ${activePage=='/blog'?'text-gray-950':''}`}>Blog</Link>
+                <Link to="/blogs" className={`hover:text-gray-950 transition duration-300 ${activePage=='/blogs'?'text-gray-950':''}`}>Blog</Link>
                 <Link to="/contact" className={`hover:text-gray-950 transition duration-300 ${activePage=='/contact'?'text-gray-950':''}`}>Contact</Link>
             </div>
 
@@ -53,11 +53,10 @@ function Navbar({activePage}) {
                         : 'max-h-0 opacity-0 py-0 pointer-events-none'
                 }`}
             >
-            {/* {openMenu && (<div className={`w-full grid gap-2 px-12 bg-white text-gray-500 text-lg transition-all duration-500`}> */}
                 <Link to="/" className={`hover:text-gray-950 transition duration-300 ${activePage=='/'?'text-gray-950 font-medium':''}` } >Home</Link>
                 <Link to="/profile" className={`hover:text-gray-950 transition duration-300 ${activePage=='/profile'?'text-gray-950 font-medium':''}`} >Profile</Link>
                 <Link to="/projects" className={`hover:text-gray-950 transition duration-300 ${activePage=='/projects'?'text-gray-950 font-medium':''}`} >Projects</Link>
-                <Link to="/blog" className={`hover:text-gray-950 transition duration-300 ${activePage=='/blog'?'text-gray-950 font-medium':''}`} >Blog</Link>
+                <Link to="/blogs" className={`hover:text-gray-950 transition duration-300 ${activePage=='/blogs'?'text-gray-950 font-medium':''}`} >Blog</Link>
                 <Link to="/contact" className={`hover:text-gray-950 transition duration-300 ${activePage=='/contact'?'text-gray-950 font-medium':''}`} >Contact</Link>
             </div>
         
