@@ -54,7 +54,7 @@ function Profile() {
                   <div className="flex relative w-7">
                       
                       <div
-                          className={`absolute inset-0 pt-0.25 pl-1 transition-all duration-400 ${
+                          className={`absolute inset-0 pt-0.25 pl-1 transition-all duration-300 ${
                               viewBscCourses
                                   ? 'opacity-0 scale-75'
                                   : 'opacity-100 scale-100'
@@ -64,7 +64,7 @@ function Profile() {
                       </div>
 
                       <div
-                          className={`absolute inset-0 pt-0.25 pl-1 transition-all duration-400 ${
+                          className={`absolute inset-0 pt-0.25 pl-1 transition-all duration-300 ${
                               viewBscCourses
                                   ? 'opacity-100  scale-100'
                                   : 'opacity-0 scale-75'
@@ -76,7 +76,7 @@ function Profile() {
                   </div>
                   
               </button>
-              <div className={`transition-all duration-600 ease-in-out overflow-hidden ${
+              <div className={`transition-all duration-500 ease-in-out overflow-hidden ${
                     viewBscCourses
                         ? 'max-h-120 opacity-100 pt-2 pb-4 '
                         : 'max-h-0 opacity-0 py-0 pointer-events-none'
