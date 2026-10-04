@@ -25,7 +25,7 @@ function Profile() {
         <div>
           <h1 className="text-2xl sm:text-3xl font-semibold ">
             <div className="flex items-end">
-              <div className="text-4xl sm:text-5xl">E</div>
+              <div className="text-3xl sm:text-4xl">E</div>
               <div>ducation</div>
             </div>
           </h1>
@@ -41,8 +41,8 @@ function Profile() {
               </p>
             </div>
             <div className="flex flex-col px-2 gap-1">
-              <p className="hidden sm:block text-sm sm:text-base md:text-md text-lg text-gray-500">Bachelor of Science (B.Sc) in Electrical and Electronic Engineering (EEE)</p>
-              <p className="sm:hidden text-sm sm:text-base md:text-md text-lg text-gray-500">B.Sc in Electrical and Electronic Engineering (EEE)</p>
+              <p className="hidden sm:block text-sm sm:text-base md:text-md text-lg text-gray-500">Bachelor of Science (B.Sc.) in Electrical and Electronic Engineering (EEE)</p>
+              <p className="sm:hidden text-sm sm:text-base md:text-md text-lg text-gray-500">B.Sc. in Electrical and Electronic Engineering (EEE)</p>
               <p className="text-sm sm:text-base md:text-md text-lg text-gray-500">CGPA: 3.65 / 4.00</p>
               <p className="md:hidden text-gray-500 text-sm sm:text-base">
                   Jan 2022 - Jun 2026
@@ -130,7 +130,7 @@ function Profile() {
         <div>
           <h1 className="text-2xl sm:text-3xl font-semibold ">
             <div className="flex items-end">
-              <div className="text-4xl sm:text-5xl">S</div>
+              <div className="text-3xl sm:text-4xl">S</div>
               <div>kills</div>
             </div>
           </h1>
@@ -172,7 +172,7 @@ function Profile() {
         <div className="">
           <h1 className="text-2xl sm:text-3xl font-semibold ">
             <div className="flex items-end">
-              <div className="text-4xl sm:text-5xl">C</div>
+              <div className="text-3xl sm:text-4xl">C</div>
               <div>ertifications</div>
             </div>
           </h1>
