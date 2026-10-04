@@ -14,7 +14,7 @@ function Profile() {
   const programmingLanguages=['C/C++','Python','JavaScript','MATLAB', 'Assembly','Verilog'];
   const frameworks=['TensorFlow', 'Keras', 'PyTorch', 'Scikit-learn', 'React', 'NodeJS', 'Django'];
   const dataAnalysis=['Pandas', 'NumPy', 'SQL', 'MongoDB'];
-  const tools=['PSpice', 'Arduino', 'Kaggle', 'AutoCAD', 'Quartus', 'Simulink', 'Git & Github']
+  const tools=['Git & Github','Simulink', 'Arduino', 'Kaggle', 'AutoCAD', 'Quartus','PSpice']
   const hardware=[ 'Microcontrollers', 'FPGA', 'Embedded Systems', 'Sensor Interfacing'];
 
   return (
