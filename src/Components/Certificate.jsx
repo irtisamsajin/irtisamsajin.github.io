@@ -3,7 +3,7 @@ import Keywords from "./Keywords"
 function Certificate(props){
     return (
         <>
-        <div className="py-4 px-2 sm:px-5">
+        <div className="flex flex-col gap-2 py-4 px-2 sm:px-5">
             <div className="flex justify-start items-center mb-2 gap-2 sm:mb-0">
             
               <p className="text-md sm:text-lg lg:text-xl font-medium">
@@ -14,8 +14,8 @@ function Certificate(props){
 
                
             </div>
-            <div className="flex flex-col px-2 gap-0.5">
-              <p className="text-sm sm:text-base md:text-md text-lg font-medium">{props.organization}</p>
+            <div className="flex flex-col px-2 gap-1">
+              <p className="text-sm sm:text-base font-medium">{props.organization}</p>
               {Object.hasOwn(props,'issueDate') && (<p className="text-gray-500 text-sm sm:text-base">
                   {props.issueDate}
               </p>)}
