@@ -12,6 +12,8 @@
 
 */
 
+const topics=["Embedded","Programming","Software","Misc","Life","C","C++","Medium"];
+
 const blogLists=[
     
 ]
@@ -407,4 +409,4 @@ It also covers habits that can make the learning process less frustrating and mo
   }
 ]; */
 
-export default blogLists
+export {blogLists,topics}

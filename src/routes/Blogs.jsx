@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import blogLists from "../blogLists"
+import {blogLists} from "../blogLists"
 import Footer from "../Components/Footer"
 import Navbar from "../Components/Navbar"
 import Keywords from "../Components/Keywords"
