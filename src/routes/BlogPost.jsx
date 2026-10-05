@@ -1,9 +1,16 @@
 import { useParams } from "react-router-dom"
 import Footer from "../Components/Footer"
 import Navbar from "../Components/Navbar"
+import { useEffect } from "react";
 
 function BlogPost(){
 
+    useEffect(() => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth" 
+      });
+    }, []);
     const {slug}=useParams();
 
     return (
