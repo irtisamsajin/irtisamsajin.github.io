@@ -5,6 +5,7 @@ import Projects from "./routes/Projects";
 import Contact from "./routes/Contact";
 import Blogs from "./routes/Blogs";
 import BlogPost from "./routes/BlogPost";
+import NotFound from "./Components/NotFound";
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/blog/:slug" element={<BlogPost />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </HashRouter>
   )

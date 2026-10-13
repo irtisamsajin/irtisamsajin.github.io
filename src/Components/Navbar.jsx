@@ -1,8 +1,18 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
 
+
+
 function Navbar({activePage}) {
     const [openMenu, setOpenMenu]=useState(false);
+    const Links=(<>
+            <Link to="/" className={`hover:text-gray-950 transition duration-300 ${activePage=='/'?'text-gray-950 ':''}`}>Home</Link>
+            <Link to="/profile" className={`hover:text-gray-950 transition duration-300 ${activePage=='/profile'?'text-gray-950':''}`}>Profile</Link>
+            <Link to="/projects" className={`hover:text-gray-950 transition duration-300 ${activePage=='/projects'?'text-gray-950':''}`}>Projects</Link>
+            <Link to="/blogs" className={`hover:text-gray-950 transition duration-300 ${activePage=='/blogs'?'text-gray-950':''}`}>Blog</Link>
+            {/* <Link to="/contact" className={`hover:text-gray-950 transition duration-300 ${activePage=='/contact'?'text-gray-950':''}`}>Contact</Link> */}
+        </>
+    )
     return (
     <>
     <div className={`border-b-2 border-b-gray-100 pt-1`}>
@@ -11,11 +21,7 @@ function Navbar({activePage}) {
                 <Link to="/" ><h3 className="text-3xl p-2 font-brittany">Irtisam Sajin</h3></Link>
             </div>
             <div className="hidden sm:flex justify-center gap-1 sm:gap-5 md:gap-6 lg:gap-10 text-lg text-gray-400">
-                <Link to="/" className={`hover:text-gray-950 transition duration-300 ${activePage=='/'?'text-gray-950 ':''}`}>Home</Link>
-                <Link to="/profile" className={`hover:text-gray-950 transition duration-300 ${activePage=='/profile'?'text-gray-950':''}`}>Profile</Link>
-                <Link to="/projects" className={`hover:text-gray-950 transition duration-300 ${activePage=='/projects'?'text-gray-950':''}`}>Projects</Link>
-                <Link to="/blogs" className={`hover:text-gray-950 transition duration-300 ${activePage=='/blogs'?'text-gray-950':''}`}>Blog</Link>
-                <Link to="/contact" className={`hover:text-gray-950 transition duration-300 ${activePage=='/contact'?'text-gray-950':''}`}>Contact</Link>
+                {Links}
             </div>
 
             <div className="sm:hidden flex items-center text-lg/6 text-gray-500">
@@ -53,11 +59,7 @@ function Navbar({activePage}) {
                         : 'max-h-0 opacity-0 py-0 pointer-events-none'
                 }`}
             >
-                <Link to="/" className={`hover:text-gray-950 transition duration-300 ${activePage=='/'?'text-gray-950 font-medium':''}` } >Home</Link>
-                <Link to="/profile" className={`hover:text-gray-950 transition duration-300 ${activePage=='/profile'?'text-gray-950 font-medium':''}`} >Profile</Link>
-                <Link to="/projects" className={`hover:text-gray-950 transition duration-300 ${activePage=='/projects'?'text-gray-950 font-medium':''}`} >Projects</Link>
-                <Link to="/blogs" className={`hover:text-gray-950 transition duration-300 ${activePage=='/blogs'?'text-gray-950 font-medium':''}`} >Blog</Link>
-                <Link to="/contact" className={`hover:text-gray-950 transition duration-300 ${activePage=='/contact'?'text-gray-950 font-medium':''}`} >Contact</Link>
+                {Links}
             </div>
         
         </div>
