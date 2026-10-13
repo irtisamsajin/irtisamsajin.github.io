@@ -16,7 +16,7 @@ const blogsListComponent=((post) => {
   return (
     <div className="border-1 sm:border-2 border-gray-300 hover:border-gray-600 rounded-xl pointer-cursor px-4 py-5 transition duration-300">
       <p className="text-xl sm:text-2xl font-semibold">{post.title}</p>
-      <p className="text-gray-500 text-sm sm:text-base my-1">
+      <p className="text-gray-500 text-sm sm:text-base my-1 pt-1 px-2">
           {post.date}
       </p>
       <div className="text-base sm:text-lg p-2">{post.description}</div>
@@ -30,26 +30,20 @@ function Blogs() {
   return (
     <>
       <Navbar activePage='/blogs' />
-      <div className="flex flex-col min-h-screen items-stretch gap-15 py-8 px-4.75 sm:px-20 lg:px-40 xl:px-60">
+      <div className="flex flex-col min-h-screen items-stretch py-8 px-4.75 sm:px-20 lg:px-40 xl:px-60">
         <div>
-          {/* <Link to="/blogs">
+          <Link to="/blogs">
           <h1 className="text-2xl sm:text-3xl font-semibold ">
             <div className="flex items-end">
               <div className="text-3xl sm:text-4xl">B</div>
               <div>log</div>
             </div>
           </h1>
-          </Link> */}
+          </Link>
           <div className="flex flex-col gap-10 my-10 mx-2 sm:mx-5">
             {blogLists.map((post) => {
               return(
               <>
-              {/* 
-              
-                Any update to one section should be carefully made in both sections
-                (section with slug and section with link)
-
-              */}
               {Object.hasOwn(post,'slug') && (  
               <Link to={`/blog/${post.slug}`}>
                 {blogsListComponent(post)}

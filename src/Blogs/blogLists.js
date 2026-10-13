@@ -15,12 +15,12 @@
 
 const topics=["Embedded","Programming","Software","Misc","Life","C","C++","Medium"];
 
-const blogLists=[
+/* const blogLists=[
     
-]
+]; */
 
 //temporary
-/* const blogLists = [
+const blogLists = [
   {
     title: "Getting Started with Embedded Systems",
     date: "January 5, 2026",
@@ -406,6 +406,6 @@ It also covers habits that can make the learning process less frustrating and mo
     topics: [],
     slug: "things-i-wish-i-knew-before-learning-c"
   }
-]; */
+];
 
 export {blogLists,topics}

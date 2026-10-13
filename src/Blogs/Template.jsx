@@ -1,8 +1,3 @@
-/* 
-    <ul className="list-disc pl-8"></ul>
-
-
-*/
 
 function Content(){
     const title="";
@@ -11,7 +6,7 @@ function Content(){
     return (
         <div className="px-2">
             <h2 className="text-2xl sm:text-3xl font-semibold ">{title}</h2>
-            <p className="text-gray-500 text-sm sm:text-base my-2">{date}</p>
+            <p className="text-gray-500 text-sm sm:text-base my-2 pl-2">{date}</p>
             
             <div className="text-lg leading-7 sm:text-xl sm:leading-8 pl-2">
                 <p></p>
@@ -29,7 +24,14 @@ function Content(){
                     Caption
                 </figure>
 
+                <a href="" className="underline">Caption</a>
 
+            </div>
+            <div className="text-lg leading-7 sm:text-xl sm:leading-8 m-8">
+                Resources:
+                <ul className="list-disc pl-8 my-1">
+                    <li>Paper</li>
+                </ul>
             </div>
         </div>
     )

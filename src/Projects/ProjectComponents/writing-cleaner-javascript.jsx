@@ -6,7 +6,7 @@ function Content(){
     return (
         <div className="px-2">
             <h2 className="text-3xl font-semibold ">{title}</h2>
-            <p className="text-gray-500 text-sm sm:text-base my-2">{date}</p>
+            <p className="text-gray-500 text-sm sm:text-base my-2 pl-2">{date}</p>
             <div className="text-lg leading-7 sm:text-xl sm:leading-8 pl-2">
                 <p>Pellentesque consequat mattis dui et tempor. Nunc rhoncus dolor id blandit dignissim. Nullam malesuada vel massa sit amet imperdiet. Ut dignissim ultrices pellentesque. Donec eu pulvinar dolor, placerat bibendum justo. Fusce risus ipsum, imperdiet at hendrerit ultrices, viverra sagittis turpis.</p>
                 <ul className="list-disc pl-8 my-2">
@@ -27,6 +27,14 @@ function Content(){
 
                 <p>Pellentesque consequat mattis dui et tempor. Nunc rhoncus dolor id blandit dignissim. Nullam malesuada vel massa sit amet imperdiet. Ut dignissim ultrices pellentesque. Donec eu pulvinar dolor, placerat bibendum justo. Fusce risus ipsum, imperdiet at hendrerit ultrices, viverra sagittis turpis.</p>
                 
+                <a href="" className="underline">Caption</a>
+
+            </div>
+            <div className="text-lg leading-7 sm:text-xl sm:leading-8 m-8">
+                Resources:
+                <ul className="list-disc pl-8 my-1">
+                    <li>Paper</li>
+                </ul>
             </div>
         </div>
     )
