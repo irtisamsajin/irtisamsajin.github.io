@@ -1,10 +1,10 @@
 const topics=["Embedded","Programming","Software","Misc","Life","C","C++","Medium"];
 
-/* const projectList=[
-
-]; */
-
 const projectList=[
+
+];
+
+/* const projectList=[
     {
     title: "Writing Cleaner JavaScript",
     date: "January 2025",
@@ -54,6 +54,6 @@ It also shows why RAII helps reduce leaks and makes exception-safe code easier t
     topics: ["C++", "Programming"],
     slug: "raii-explained-in-cpp"
   }
-]
+] */
 
 export {projectList,topics}
