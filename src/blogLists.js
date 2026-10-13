@@ -6,7 +6,8 @@
         description: str,
         topics: list of str,
         slug: str (unique),
-        link: link to external posts
+        link: link to external posts,
+        website: name of site where blog is posted
     }
 
 
@@ -32,9 +33,6 @@ It also looks at the common tools and workflows used when building embedded appl
   {
     title: "Understanding Memory in C",
     date: "2026-01-12",
-    description: `Memory management is one of the most important concepts to understand when working with C.
-This article explains stack memory, heap memory, pointers, and how data is stored while a program runs.
-It also covers several common mistakes that can lead to crashes or unexpected behavior.`,
     topics: ["C", "Programming"],
     slug: "understanding-memory-in-c"
   },
@@ -45,7 +43,8 @@ It also covers several common mistakes that can lead to crashes or unexpected be
 This article explores useful language features such as type inference, smart pointers, range-based loops, and move semantics.
 The focus is on practical features that can improve everyday C++ development.`,
     topics: ["C++", "Programming", "Software"],
-    slug: "modern-cpp-features-worth-using"
+    website: "Medium.com",
+    link: "https://github.com/irtisamsajin"
   },
   {
     title: "How Interrupts Work in Microcontrollers",
