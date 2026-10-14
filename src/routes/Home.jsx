@@ -95,7 +95,7 @@ function Home() {
           </p>
 
           <p>
-          Driven by my background in EEE and curiosity about computing systems, I am particularly interested in designing hardware-software architectures and efficient systems that meet the demands of modern applications.
+          Driven by my background in EEE and my curiosity about computing systems, I am particularly interested in designing hardware-software architectures and efficient systems that meet the demands of modern applications.
           </p>
 
         </div>
