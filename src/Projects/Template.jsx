@@ -4,14 +4,14 @@ function Content(){
     const date=""; //January 5, 2026
 
     return (
-        <div className="px-2">
+        <div className="sm:px-2">
             <h2 className="text-xl sm:text-3xl font-semibold ">{title}</h2>
-            <p className="text-gray-500 text-sm sm:text-base my-2 pl-2">{date}</p>
-            
-            <div className="text-base leading-7 sm:text-xl sm:leading-8 pl-2">
+            <p className="text-gray-500 text-sm sm:text-base my-2 sm:pl-2">{date}</p>
+
+            <div className="text-base leading-7 sm:text-xl sm:leading-8 sm:pl-2">
                 <p></p>
 
-                <ul className="list-disc pl-8 my-2"></ul>
+                <ul className="list-disc pl-5 sm:pl-8 my-2"></ul>
 
                 <h4 className="text-xl font-semibold mt-7 mb-3"></h4>
 

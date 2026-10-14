@@ -83,7 +83,7 @@ function Home() {
           
         </div>
 
-        <div className="text-base sm:text-lg leading-7 sm:leading-8 px-2">
+        <div className="text-base sm:text-lg leading-7 sm:leading-8 sm:px-2">
           <h3 className="text-lg sm:text-xl font-semibold ">
             About me
           </h3> 
@@ -99,11 +99,11 @@ function Home() {
           </p>
 
         </div>
-        <div className="text-base sm:text-lg leading-7 sm:leading-8 px-2">
+        <div className="text-base sm:text-lg leading-7 sm:leading-8 sm:px-2">
           <h3 className="text-lg sm:text-xl font-semibold ">
             Current Focus
           </h3>
-          <ul className="list-disc pl-8 my-2">
+          <ul className="list-disc pl-5 sm:pl-8 my-2">
             <li>Builiding a personal portfolio</li>
             <li>Hands-on Embedded Programming</li>
           </ul>
