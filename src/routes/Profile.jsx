@@ -12,7 +12,7 @@ function Profile() {
   ];
   
   const programmingLanguages=['C/C++','Python','JavaScript','MATLAB', 'Assembly','Verilog'];
-  const frameworks=['TensorFlow', 'Keras', 'PyTorch', 'Scikit-learn', 'React', 'NodeJS', 'Django'];
+  const frameworks=['TensorFlow', 'Keras', 'PyTorch', 'Scikit-learn', 'React', 'NodeJS', 'Django','Tailwind'];
   const dataAnalysis=['Pandas', 'NumPy', 'SQL', 'MongoDB'];
   const tools=['Git & Github','Simulink', 'Arduino', 'Kaggle', 'AutoCAD', 'Quartus','PSpice']
   const hardware=[ 'Microcontrollers', 'FPGA', 'Embedded Systems', 'Sensor Interfacing'];

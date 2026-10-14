@@ -1,3 +1,4 @@
+import { HiOutlineExternalLink } from "react-icons/hi"
 import Keywords from "./Keywords"
 
 function Certificate(props){
@@ -6,10 +7,10 @@ function Certificate(props){
         <div className="flex flex-col gap-2 py-4 px-2 sm:px-5">
             <div className="flex justify-start items-center mb-2 gap-2 sm:mb-0">
             
-              <p className="text-md sm:text-lg lg:text-xl font-medium">
-                {Object.hasOwn(props,'link') &&  (<a href={props.link} className="text-gray-400 hover:text-gray-950 text-sm lg:text-md ">
-                🔗
-              </a>)} {props.name} 
+              <p className="flex justify-start items-center gap-1 text-md sm:text-lg lg:text-xl font-medium">
+                 {props.name} {Object.hasOwn(props,'link') &&  (<a href={props.link} className="">
+                <HiOutlineExternalLink />
+              </a>)}
               </p>
 
                

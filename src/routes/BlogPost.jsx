@@ -21,7 +21,7 @@ function BlogPost(){
       <Navbar activePage='' />
       <div className="flex flex-col min-h-screen items-stretch gap-5 py-8 px-4.75 sm:px-20 lg:px-40 xl:px-60">
         <Link to="/blogs">
-          <span className="text-sm sm:text-base text-lg text-gray-400 hover:text-gray-700 transition duration-300 "> {"く Back to blog"}</span>
+          <span className="text-sm sm:text-base text-lg text-gray-500 hover:text-gray-900 transition duration-200 "> {"く Back to blog"}</span>
         </Link>
         <Content />
       </div>

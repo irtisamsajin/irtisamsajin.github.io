@@ -3,6 +3,7 @@ import {blogLists} from "../Blogs/blogLists"
 import Footer from "../Components/Footer"
 import Navbar from "../Components/Navbar"
 import Keywords from "../Components/Keywords"
+import { HiOutlineExternalLink } from "react-icons/hi"
 
 {/* 
   Need to complete:
@@ -15,7 +16,9 @@ import Keywords from "../Components/Keywords"
 const blogsListComponent=((post) => {
   return (
     <div className="border-1 sm:border-2 border-gray-300 hover:border-gray-600 rounded-xl pointer-cursor px-4 py-5 transition duration-300">
-      <p className="text-xl sm:text-2xl font-semibold">{post.title}</p>
+      <p className="flex gap-1 items-center text-xl sm:text-2xl font-semibold">
+        {post.title} {Object.hasOwn(post,'link') && (<HiOutlineExternalLink className="text-xl" />)}
+      </p>
       <p className="text-gray-500 text-sm sm:text-base my-1 pt-1 px-2">
           {post.date}
       </p>
