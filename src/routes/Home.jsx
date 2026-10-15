@@ -71,7 +71,7 @@ function Home() {
                 className="w-5.5 sm:w-6.5"
               />
             </a>
-            <a href="/Mohammed_Irtisam_Sajin.pdf" className="flex gap-1 justify-start items-center text-gray-600">
+            <a href="/Mohammed_Irtisam_Sajin.pdf" className="flex text-sm gap-0.5 justify-start items-center text-gray-600">
               <img 
                 src="/cv.png"
                 alt="CV Logo"
