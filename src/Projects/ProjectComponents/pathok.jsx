@@ -45,7 +45,7 @@ function Content(){
                 and concatenates those graphemes to output the bangla text.
                 </p>
 
-                <figure className="m-6 sm:m-9 text-base text-center text-gray-600">
+                <figure className="m-4 sm:m-9 text-base text-center text-gray-600">
                     <img 
                         src="/figures/pathok/results.png"
                         alt=""
