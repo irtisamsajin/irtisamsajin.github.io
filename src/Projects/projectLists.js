@@ -7,7 +7,7 @@
       slug: ""
   } */
 
-const topics=["Machine Learning","Software","Microcontroller","Embedded","FPGA","Open Source Contribution","Chrome Extension","Full-Stack","Verilog","Electronics","MATLAB"];
+const topics=["Machine Learning","Software Development","Microcontroller","Embedded","FPGA","Open Source Contribution","Chrome Extension","Full-Stack","Verilog","Electronics","MATLAB"];
 
 const projectList=[
   {
@@ -22,7 +22,7 @@ const projectList=[
       date: "",
       description: `Reported and fixed an issue on the main Zulip server that was causing errors when forwarding missed
 messages to user's emails.`,
-      topics: ["Software","Open Source Contribution"],
+      topics: ["Software Development","Open Source Contribution"],
       slug: "fix-forwarding-emails-missed-messages"
   },
   {
@@ -36,7 +36,7 @@ messages to user's emails.`,
       title: "Currency Converter Chrome Extension",
       date: "",
       description: `A real-time currency converter chrome extension with 200+ active users. Supports 170+ currencies for conversion. `,
-      topics: ["Software","Chrome Extension"],
+      topics: ["Software Development","Chrome Extension"],
       slug: "currency-converter"
   },
   {
@@ -58,7 +58,7 @@ messages to user's emails.`,
       title: "Thoughts - A quick and simple tool to save your thoughts",
       date: "",
       description: `A full-stack (MERN) Web application to quickly save your thoughts.`,
-      topics: ["Software","Full-Stack"],
+      topics: ["Software Development","Full-Stack"],
       slug: "thoughts"
   },
   {

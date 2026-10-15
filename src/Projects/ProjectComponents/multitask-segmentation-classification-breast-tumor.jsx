@@ -5,7 +5,7 @@ function Content(){
 
     return (
         <div className="sm:px-2">
-            <h2 className="text-xl sm:text-3xl font-semibold ">{title}</h2>
+            <h2 className="text-xl sm:text-2xl font-semibold ">{title}</h2>
             <p className="text-gray-500 text-sm sm:text-base my-2 sm:pl-2">{date}</p>
 
             <div className="text-base leading-7 sm:text-xl sm:leading-8 sm:pl-2">

@@ -20,7 +20,7 @@ function Project(){
     return (
     <>
       <Navbar activePage='' />
-      <div className="flex flex-col min-h-screen items-stretch gap-5 py-8 px-4.75 sm:px-20 lg:px-40 xl:px-60">
+      <div className="flex flex-col min-h-screen items-stretch gap-5 py-8 px-4.75 sm:px-10 lg:px-30 xl:px-40">
         <Link to="/projects">
           <span className="text-sm sm:text-base text-lg text-gray-500 hover:text-gray-900 transition duration-200"> {"く Back to projects"}</span>
         </Link>
