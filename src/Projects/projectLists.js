@@ -13,7 +13,7 @@ const projectList=[
   {
     title: "PATHOK: A Bangla Handwritten and Scene Text Recognition Model using Grapheme Tokenization",
     date: "June 2026",
-    description: `Our undergraduate thesis where we worked on building a Bangla text recognition model (OCR) that could capture texts from Handwritten images and Scene texts.`,
+    description: `Our undergraduate thesis where we worked on building a Bangla text recognition model that could capture texts from Handwritten images and Scene texts.`,
     topics: ["Machine Learning"],
     slug: "pathok"
   },
