@@ -30,7 +30,7 @@ function Content(){
                         <img 
                             src="/figures/pathok/Scene_texts.png"
                             alt=""
-                            className="w-90 my-3 rounded-sm border border-neutral-200 bg-white"
+                            className="w-90 my-3 bg-white"
                         />
                         Fig 1(b): Bangla Scene texts
                     </figure>
