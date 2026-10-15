@@ -18,7 +18,7 @@ const projectList=[
     slug: "pathok"
   },
   {
-      title: "Zulip - Full Stack Open Source Contribution",
+      title: "Open Source Contribution to Zulip",
       date: "",
       description: `Reported and fixed an issue on the main Zulip server that was causing errors when forwarding missed
 messages to user's emails.`,

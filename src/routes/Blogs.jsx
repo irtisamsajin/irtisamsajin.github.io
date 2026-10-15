@@ -36,7 +36,7 @@ function Blogs() {
       <div className="flex flex-col min-h-screen items-stretch py-8 px-4.75 sm:px-20 lg:px-40 xl:px-60">
         <div>
           <Link to="/blogs">
-          <h1 className="text-2xl sm:text-3xl font-semibold ">
+          <h1 className="text-2xl sm:text-3xl font-semibold inline-block">
             <div className="flex items-end">
               <div className="text-3xl sm:text-4xl">B</div>
               <div>log</div>
