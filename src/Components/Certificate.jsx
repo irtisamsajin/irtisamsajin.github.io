@@ -8,8 +8,8 @@ function Certificate(props){
             <div className="flex justify-start items-center mb-2 gap-2 sm:mb-0">
             
               <p className="text-md sm:text-lg lg:text-xl font-medium">
-                 {props.name} {Object.hasOwn(props,'link') &&  (<a href={props.link} className="flex inline-flex text-sm sm:text-base">
-                <HiOutlineExternalLink />
+                 {props.name} {Object.hasOwn(props,'link') &&  (<a href={props.link} className=" inline-block align-top mt-1.25">
+                <HiOutlineExternalLink className="" />
               </a>)}
               </p>
                
