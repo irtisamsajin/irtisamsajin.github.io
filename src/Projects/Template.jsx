@@ -19,7 +19,7 @@ function Content(){
                     <img 
                         src=""
                         alt=""
-                        className="w-110 mx-auto my-3 rounded-sm border border-neutral-200 bg-white"
+                        className="w-110 mx-auto my-3"
                     />
                     Caption
                 </figure>
