@@ -31,7 +31,7 @@ function Content(){
                 References:
                 <ul className="list-disc pl-8 sm:pl-10">
                     <li></li>
-                    <li><a href="" className="flex items-center gap-2 inline-flex">Raised Issue {/* <HiOutlineExternalLink /> */}</a></li>
+                    <li><a href="">  {/* <HiOutlineExternalLink className="inline-block align-top mt-1.25 sm:mt-2" /> */}</a></li>
                 </ul>
             </div>
         </div>
