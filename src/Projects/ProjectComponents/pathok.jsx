@@ -30,7 +30,7 @@ function Content(){
                         <img 
                             src="/figures/pathok/Scene_texts.png"
                             alt=""
-                            className="w-80 my-3 rounded-sm border border-neutral-200 bg-white"
+                            className="w-90 my-3 rounded-sm border border-neutral-200 bg-white"
                         />
                         Fig 1(b): Bangla Scene texts
                     </figure>
@@ -45,11 +45,11 @@ function Content(){
                 and concatenates those graphemes to output the bangla text.
                 </p>
 
-                <figure className="m-9 text-base text-center text-gray-600">
+                <figure className="m-6 sm:m-9 text-base text-center text-gray-600">
                     <img 
                         src="/figures/pathok/results.png"
                         alt=""
-                        className="w-180 my-3 mx-auto bg-white"
+                        className="my-3 bg-white"
                     />
                     Table 1: Performance comparison of different Encoder models and Tokenizers
                 </figure>
