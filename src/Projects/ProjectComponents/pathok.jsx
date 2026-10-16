@@ -17,6 +17,7 @@ function Content(){
                 text and Bangla scene text while investigating the effectiveness of different image encoders
                 and tokenization strategies.
                 </p>
+                
                 <div className="flex flex-wrap justify-center m-9 gap-3">
                     <figure className="text-base text-center text-gray-600">
                         <img 
@@ -35,6 +36,7 @@ function Content(){
                         Fig 1(b): Bangla Scene texts
                     </figure>
                 </div>
+
                 <p>
                 
                 The pipeline starts with the image
