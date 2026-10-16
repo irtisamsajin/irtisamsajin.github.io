@@ -8,7 +8,7 @@ function Content(){
             <h2 className="text-xl sm:text-2xl font-semibold ">{title}</h2>
             <p className="text-gray-500 text-sm sm:text-base my-2 sm:pl-2">{date}</p>
 
-            <div className="text-base leading-7 sm:text-xl sm:leading-8 sm:pl-2">
+            <div className="text-base leading-7 sm:text-xl sm:leading-8 sm:pl-2  flex flex-col gap-2">
                 <p></p>
 
                 <ul className="list-disc pl-5 sm:pl-8 my-2"></ul>
@@ -19,7 +19,7 @@ function Content(){
                     <img 
                         src=""
                         alt=""
-                        className="w-110 mx-auto my-3 rounded-sm border border-neutral-200 bg-white"
+                        className="w-110 mx-auto my-3"
                     />
                     Caption
                 </figure>
@@ -27,10 +27,11 @@ function Content(){
                 <a href="" className="underline">Caption</a>
 
             </div>
-            <div className="text-lg leading-7 sm:text-xl sm:leading-8 m-8">
-                Resources:
-                <ul className="list-disc pl-8 my-1">
-                    <li>Paper</li>
+            <div className="text-base sm:text-lg leading-6 sm:leading-8 mt-5 ml-2 sm:ml-4 text-gray-600">
+                References:
+                <ul className="list-disc pl-8 sm:pl-10">
+                    <li></li>
+                    <li><a href="">  {/* <HiOutlineExternalLink className="inline-block align-top mt-1.25 sm:mt-2" /> */}</a></li>
                 </ul>
             </div>
         </div>
