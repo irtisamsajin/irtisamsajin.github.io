@@ -35,14 +35,15 @@ function Blogs() {
       <Navbar activePage='/blogs' />
       <div className="flex flex-col min-h-screen items-stretch py-8 px-4.75 sm:px-20 lg:px-40 xl:px-60">
         <div>
-          <Link to="/blogs">
           <h1 className="text-2xl sm:text-3xl font-semibold inline-block">
             <div className="flex items-end">
-              <div className="text-3xl sm:text-4xl">B</div>
-              <div>log</div>
+              <div className="text-3xl sm:text-4xl">W</div>
+              <div>elcome to my blog</div>
             </div>
           </h1>
-          </Link>
+          <h3 className="text-sm sm:text-lg text-gray-600 pl-2 md:pl-3 my-3">
+            A place where I share my journey, thoughts and ideas.
+          </h3>
           <div className="flex flex-col gap-10 my-10 mx-0 md:mx-4">
             {blogLists.map((post) => {
               return(

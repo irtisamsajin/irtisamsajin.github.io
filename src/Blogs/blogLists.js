@@ -1,22 +1,32 @@
 /* 
-    Blog item:
-    {
-        title: str,
-        date: str,
-        description: str,
-        topics: list of str,
-        slug: str (unique),
-        link: link to external posts,
-        website: name of site where blog is posted
-    }
+  With link
 
+    {
+        title: "",
+        date: "",
+        description: "",
+        topics: [],
+        link: "",
+        website: ""
+    }
+*/
+
+/*
+    With slug
+    
+    {
+        title: "",
+        date: "",
+        description: "",
+        topics: [],
+        slug: ""
+    }
 
 */
 
 const topics=["Embedded","Programming","Software","Misc","Life","C","C++","Medium"];
 
 const blogLists=[
-    
 ];
 
 //temporary
