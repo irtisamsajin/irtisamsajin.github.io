@@ -15,7 +15,7 @@ function Content(){
 
                 <h4 className="text-xl font-semibold mt-7 mb-3"></h4>
 
-                <figure className="m-9 text-base text-center text-gray-600">
+                <figure className="mx-4 md:mx-8 mt-9 text-base text-center text-gray-600">
                     <img 
                         src=""
                         alt=""

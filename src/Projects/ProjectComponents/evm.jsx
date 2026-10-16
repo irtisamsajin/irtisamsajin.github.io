@@ -11,7 +11,7 @@ function Content(){
 
             <div className="text-base leading-7 sm:text-xl sm:leading-8 sm:pl-2  flex flex-col gap-2">
 
-                <figure className="m-4 sm:m-9 text-base text-center text-gray-600">
+                <figure className="mx-4 md:mx-8 mt-9 text-base text-center text-gray-600">
                     <img 
                         src="/figures/evm/block_diagram.png"
                         alt=""
