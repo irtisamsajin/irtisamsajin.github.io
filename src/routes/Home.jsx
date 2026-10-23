@@ -6,7 +6,7 @@ function Home() {
   return (
     <>
       <Navbar activePage='/' />
-      <div className="flex flex-col min-h-screen items-stretch gap-10 py-8 px-4.75 sm:px-10 xl:px-50">
+      <div className="flex flex-col min-h-screen items-stretch gap-10 py-8 px-4.75 sm:px-10 md:px-25 lg:px-40 xl:px-50">
         <div className="flex flex-col items-center">
           <img 
             src="/Profile Photo.jpg"
@@ -99,11 +99,13 @@ function Home() {
           </p>
 
         </div>
-        <div className="hidden text-base sm:text-lg leading-7 sm:leading-8 sm:px-2">
-          <h3 className="text-lg sm:text-xl font-semibold ">
+        <div className="border-2 border-gray-300 rounded-lg p-2 sm:p-3 md:p-4 text-base sm:text-lg leading-7 sm:leading-8">
+          <h2 className="text-md sm:text-lg font-semibold ">
             Current Focus
-          </h3>
+          </h2>
           <ul className="list-disc pl-5 sm:pl-8 my-2">
+            <li>Bare-metal programming using an Stm32 microcontroller. </li>
+            <li>Diving deep into the nitty gritty of LLMs and Agents.</li>
           </ul>
         </div>
         
