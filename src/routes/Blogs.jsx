@@ -16,8 +16,8 @@ import { HiOutlineExternalLink } from "react-icons/hi"
 const blogsListComponent=((post) => {
   return (
     <div className="border-1 sm:border-2 border-gray-300 hover:border-gray-600 rounded-xl pointer-cursor px-3 md:px-5 py-5 transition duration-300">
-      <p className="flex gap-1 items-center text-xl sm:text-xl font-semibold pb-1">
-        {post.title} {Object.hasOwn(post,'link') && (<HiOutlineExternalLink className="text-xl" />)}
+      <p className=" text-xl sm:text-xl font-semibold pb-1">
+        {post.title} {Object.hasOwn(post,'link') && (<HiOutlineExternalLink className="text-xl inline-block align-top mt-1.25" />)}
       </p>
       <p className="text-gray-500 text-sm sm:text-base my-1 px-1">
           {post.date}
@@ -37,8 +37,8 @@ function Blogs() {
         <div>
           <h1 className="text-2xl sm:text-3xl font-semibold inline-block">
             <div className="flex items-end">
-              <div className="text-3xl sm:text-4xl">W</div>
-              <div>elcome to my blog</div>
+              {/* <div className="text-3xl sm:text-4xl">W</div> */}
+              <div>Welcome to my blog</div>
             </div>
           </h1>
           <h3 className="text-sm sm:text-lg text-gray-600 pl-2 md:pl-3 my-3">
