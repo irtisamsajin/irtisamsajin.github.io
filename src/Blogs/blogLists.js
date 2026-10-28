@@ -30,7 +30,7 @@ const blogLists=[
   {
       title: "Build and Flash your Bare-Metal Firmware",
       date: "28 October, 2026",
-      description: "Understand how bare-metal firmware are built and flashed using the ARM GNU Toolchain and OpenOCD, while exploring the different stages of the development cycle.",
+      description: "Understanding how you can build and flash your bare-metal firmware on an STM32 microcontroller using the ARM GNU Toolchain and OpenOCD, while also exploring the different stages of the development cycle.",
       topics: ["Medium article","Embedded Systems","C Programming",],
       link: "https://medium.com/@irtisamsajin/build-and-flash-your-bare-metal-firmware-cccc32a780bf",
       website: "Medium"
