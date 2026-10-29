@@ -92,7 +92,8 @@ function Home() {
           <p>
           I am a recent graduate based in Dhaka, Bangladesh. 
           My academic and practical experience spans a range of fields, including Machine Learning, Signal Processing, Embedded Systems, Microprocessors, and Robotics.
-          Beyond academics, I have participated in programming contests, achieved Specialist rank on Codeforces, built full-stack applications, and contributed to open-source.
+          Beyond academics, I have worked on projects across various domains, 
+          participated in programming contests, achieved Specialist rank on Codeforces, built full-stack applications, and contributed to open-source.
           </p>
 
           <p>
