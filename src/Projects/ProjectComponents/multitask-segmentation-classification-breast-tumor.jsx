@@ -9,7 +9,7 @@ function Content(){
             <h2 className="text-xl sm:text-2xl font-semibold ">{title}</h2>
             <p className="text-gray-500 text-sm sm:text-base my-2 sm:pl-2">{date}</p>
 
-            <div className="text-base leading-7 sm:text-xl sm:leading-8 sm:pl-2">
+            <div className="text-base leading-7 sm:text-lg sm:leading-8 sm:pl-2">
                 
                 <figure className="m-9 text-base text-center text-gray-600">
                     <img 
@@ -19,7 +19,7 @@ function Content(){
                     />
                     Fig 1: Model Architecture
                 </figure>
-                <h4 className="text-xl font-semibold mt-7 mb-3">Features</h4>
+                <h4 className="text-xl font-semibold mt-5">Features</h4>
                 <ul className="list-disc pl-5 sm:pl-8 my-2">
                     <li>A unified tumor segmentation and classification deep learning model for ultrasound
                     breast tumor images.</li>
@@ -27,7 +27,7 @@ function Content(){
                     <li>For segmentation task, a mask is generated that locates the tumor in the ultrasound image.</li>
                     <li>The classifier uses the bottleneck layers of the U-Net architecture to classify the image as Normal, Benign or Malignant.</li>
                 </ul>
-                <h4 className="text-xl font-semibold mt-7 mb-3">Results</h4>
+                <h4 className="text-xl font-semibold mt-5">Results</h4>
                 <div className="flex flex-col m-9 gap-3 items-center">
                     <figure className="text-base text-center text-gray-600">
                         <img 
