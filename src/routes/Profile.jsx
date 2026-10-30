@@ -15,7 +15,7 @@ function Profile() {
   const frameworks=['TensorFlow', 'Keras', 'PyTorch', 'Scikit-learn', 'React', 'NodeJS', 'Django','Tailwind'];
   const dataAnalysis=['Pandas', 'NumPy', 'SQL', 'MongoDB'];
   const tools=['Git & Github','Simulink', 'Arduino', 'Kaggle', 'AutoCAD', 'Quartus','PSpice']
-  const hardware=[ 'Microcontrollers', 'FPGA', 'Embedded Systems', 'Sensor Interfacing'];
+  const hardware=[ 'Microcontrollers', 'STM32', 'Embedded Systems', 'FPGA'];
 
   return (
     <>
@@ -144,6 +144,12 @@ function Profile() {
             </div>
             <div className="px-2 pt-2 sm:px-5">
                 <p className="text-base sm:text-lg lg:text-xl font-medium">
+                    Hardware
+                </p>           
+                <Keywords words={hardware} />
+            </div>
+            <div className="px-2 pt-2 sm:px-5">
+                <p className="text-base sm:text-lg lg:text-xl font-medium">
                     Frameworks & Libraries
                 </p>           
                 <Keywords words={frameworks} />
@@ -159,12 +165,6 @@ function Profile() {
                     Tools
                 </p>           
                 <Keywords words={tools} />
-            </div>
-            <div className="px-2 pt-2 sm:px-5">
-                <p className="text-base sm:text-lg lg:text-xl font-medium">
-                    Hardware
-                </p>           
-                <Keywords words={hardware} />
             </div>
           </div>
         </div>
