@@ -22,7 +22,7 @@ function Content(){
             <div className="text-base sm:text-lg leading-6 sm:leading-8 mt-5 ml-2 sm:ml-4 text-gray-600">
                 References:
                 <ul className="list-disc pl-8 sm:pl-10">
-                    <li><a href="https://github.com/irtisamsajin/STM32-Bare-Metal-Programming"> Githup repository {<HiOutlineExternalLink className="inline-block align-top mt-1.25 sm:mt-2" />}</a></li>
+                    <li><a href="https://github.com/irtisamsajin/STM32-Bare-Metal-Programming"> Github repository {<HiOutlineExternalLink className="inline-block align-top mt-1.25 sm:mt-2" />}</a></li>
                 </ul>
             </div>
         </div>
