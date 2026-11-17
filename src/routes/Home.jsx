@@ -1,4 +1,3 @@
-import { HiOutlineExternalLink } from "react-icons/hi"
 import Footer from "../Components/Footer"
 import Navbar from "../Components/Navbar"
 
@@ -106,8 +105,7 @@ function Home() {
             Current Focus
           </h2>
           <ul className="list-disc pl-5 sm:pl-8 my-2">
-            <li>Bare-metal programming using an Stm32 microcontroller. </li>
-            <li>Diving deep into the nitty-gritty of Transformers, LLMs and Agents through <a className="underline" href="https://cme295.stanford.edu/">Stanford CME 295 <HiOutlineExternalLink className="inline-block align-top mt-1.25 sm:mt-2" /></a></li>
+            <li>Bare-metal programming using an STM32 microcontroller. </li>
           </ul>
         </div>
         
